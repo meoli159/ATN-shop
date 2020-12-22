@@ -52,10 +52,10 @@ var sessOptions = {
    
 if (app.get('env') === 'production') {
     app.set('trust proxy', 1); // trust first proxy
-    session.cookie.secure = true; // serve secure cookies
+    session_cookie_secure = true // serve secure cookies
 }
    
-app.use(session( sessionOptions ));
+app.use(session( sessOptions ));
 
 
 
