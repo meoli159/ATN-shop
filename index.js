@@ -55,7 +55,7 @@ if (app.get('env') === 'production') {
     session.cookie.secure = true; // serve secure cookies
 }
    
-app.use(session( sessOptions ));
+app.use(session( sessionOptions ));
 
 
 
